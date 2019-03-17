@@ -106,13 +106,13 @@ fi
 chown $user:$user $logfile
 
 
-dashd_user=$(read_config "cadexd_user")
+cadexd_user=$(read_config "cadexd_user")
 if ! [ "$bitcoind_user" ]; then
     read -p "rpcuser (from your cadex.conf file): " -r
     write_config "cadexd_user" $REPLY
 fi
 
-dashd_password=$(read_config "cadexd_password")
+cadexd_password=$(read_config "cadexd_password")
 if ! [ "$cadexd_password" ]; then
     read -p "rpcpassword (from your cadex.conf file): " -r
     write_config "cadexd_password" $REPLY

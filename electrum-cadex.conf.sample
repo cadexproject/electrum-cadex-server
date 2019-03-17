@@ -32,9 +32,9 @@ pruning_limit = 100
 #utxo_cache = 134217728
 #addr_cache = 16777216
 
-[dashd]
-dashd_host = localhost
-dashd_port = 9998
-# user and password from dash.conf
-dashd_user =
-dashd_password =
+[cadexd]
+cadexd_host = localhost
+cadexd_port = 28280
+# user and password from cadex.conf
+cadexd_user =
+cadexd_password =
